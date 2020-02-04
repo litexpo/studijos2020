@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<HTML lang="lt">
+<head>
+    <title>Guess the word</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/timer.js"></script>
+</head>
+<body>
+    <div id="main" onload="setInterval()">
+        <div id="header">
+            <h1 id="allClicks">Total guesses: 0</h1>
+            <h1 id="correctClicks">Correct guesses: 0</h1>
+            <h1 id="timer">Time: <span id="minutes">00</span>:<span id="seconds">00</span></h1>
+        </div>
+         <div id="cards">
+            <img src="picture/facedown.png" class="card"/>
+            <img src="picture/facedown.png" class="card"/>
+            <img src="picture/facedown.png" class="card"/>
+            <img src="picture/facedown.png" class="card"/>
+            <img src="picture/facedown.png" class="card"/>
+        </div>
+        <div id="first" class="letters">
+            <img src="picture/letters/q.png" class="letter" onclick="changeLetter(0,'q')" />
+            <img src="picture/letters/w.png" class="letter" onclick="changeLetter(1,'w')" />
+            <img src="picture/letters/e.png" class="letter" onclick="changeLetter(2,'e')" />
+            <img src="picture/letters/r.png" class="letter" onclick="changeLetter(3,'r')" />
+            <img src="picture/letters/t.png" class="letter" onclick="changeLetter(4,'t')" />
+            <img src="picture/letters/y.png" class="letter" onclick="changeLetter(5,'y')" />
+            <img src="picture/letters/u.png" class="letter" onclick="changeLetter(6,'u')" />
+            <img src="picture/letters/i.png" class="letter" onclick="changeLetter(7,'i')" />
+            <img src="picture/letters/o.png" class="letter" onclick="changeLetter(8,'o')" />
+            <img src="picture/letters/p.png" class="letter" onclick="changeLetter(9,'p')" />
+        </div>
+        <div id="second" class="letters">
+            <img src="picture/letters/a.png" class="letter" onclick="changeLetter(10,'a')" />
+            <img src="picture/letters/s.png" class="letter" onclick="changeLetter(11,'s')" />
+            <img src="picture/letters/d.png" class="letter" onclick="changeLetter(12,'d')" />
+            <img src="picture/letters/f.png" class="letter" onclick="changeLetter(13,'f')" />
+            <img src="picture/letters/g.png" class="letter" onclick="changeLetter(14,'g')" />
+            <img src="picture/letters/h.png" class="letter" onclick="changeLetter(15,'h')" />
+            <img src="picture/letters/j.png" class="letter" onclick="changeLetter(16,'j')" />
+            <img src="picture/letters/k.png" class="letter" onclick="changeLetter(17,'k')" />
+            <img src="picture/letters/l.png" class="letter" onclick="changeLetter(18,'l')" />
+        </div>
+        <div id="third" class="letters">
+            <img src="picture/letters/z.png" class="letter" onclick="changeLetter(19,'z')" />
+            <img src="picture/letters/x.png" class="letter" onclick="changeLetter(20,'x')" />
+            <img src="picture/letters/c.png" class="letter" onclick="changeLetter(21,'c')" />
+            <img src="picture/letters/v.png" class="letter" onclick="changeLetter(22,'v')" />
+            <img src="picture/letters/b.png" class="letter" onclick="changeLetter(23,'b')" />
+            <img src="picture/letters/n.png" class="letter" onclick="changeLetter(24,'n')" />
+            <img src="picture/letters/m.png" class="letter" onclick="changeLetter(25,'m')" />
+        </div>
+        </div>
+    <footer onmouseover="changeColor()" onmouseout="resetColor()">
+      <p class="ftr">Povilas Pupkys JP/2 &copy; 2016</p>
+    </footer>
+</body>
+</HTML>

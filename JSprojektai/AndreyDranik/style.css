@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-image: url("img/background.jpg");
+    background-position: 100% 20%;
+    background-size: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.71);
+    box-shadow: 0px 0px 15px 0 #f78803;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+header h3 {
+    padding: 10px;
+    color: #f78803;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    z-index: 2;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 2;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.results {
+    padding-top: 15px;
+    text-align: center;
+    /*background-image: url("img/background_table.jpg");*/
+    /*background-size: 800px 500px;*/
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 485px;
+    margin-left: -400px;
+    margin-top: -250px;
+    box-shadow: 0px 0px 25px 0 #f78803;
+    border-radius: 20px;
+    z-index: 0;
+    display: none;
+}
+
+.resultLine {
+    width: 90%;
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: #f78803;
+    box-shadow: 0px 0px 5px 0 #f78803;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.registration {
+    text-align: center;
+    background-image: url("img/welcome.jpg");
+    background-size: 800px 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 500px;
+    margin-left: -400px;
+    margin-top: -250px;
+    box-shadow: 0px 0px 25px 0 #f78803;
+    border-radius: 20px;
+    padding-top: 0px;
+    z-index: 0;
+}
+
+.welcome img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.input {
+    width: 195px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 1px #f78803;
+    color: #f78803;
+    background-color: #000000;
+    padding-left: 15px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+input::placeholder {
+    color: #f78803;
+}
+
+input[type=text] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #f78803;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 15px #f78803;
+    margin: 5px 1px 3px 0px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    background-image: url("img/background_table.jpg");
+    background-size: 800px 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 500px;
+    margin-left: -400px;
+    margin-top: -250px;
+    box-shadow: 0px 0px 25px 0 #f78803;
+    border-radius: 20px;
+    z-index: -1;
+    display: none;
+}
+
+.inactiveGamer {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 90;
+    text-align: center;
+    color: #f78803;
+}
+
+.activeGamer {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    text-align: center;
+    color: #f3385e;
+}
+
+#player1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#player2 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.playerName {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.totalScore {
+    margin-top: 50px;
+}
+
+.score {
+    font-size: 100px;
+}
+
+.drop {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #f78803;
+    border: solid 1px #f78803;
+    background-color: #000000;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.drop img {
+    width: 30px;
+    height: 30px;
+}
+
+.drop p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.start {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 180px;
+    display: flex;
+    justify-content: center;
+    color: #f78803;
+    border: solid 1px #f78803;
+    background-color: #000000;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.start img {
+    width: 30px;
+    height: 30px;
+}
+
+.start p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.newGame {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #f78803;
+    border: solid 1px #f78803;
+    background-color: #000000;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.newGame img {
+    width: 30px;
+    height: 30px;
+}
+
+.newGame p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.roll {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    color: #f78803;
+    border: solid 1px #f78803;
+    background-color: #000000;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.roll img {
+    width: 30px;
+    height: 30px;
+}
+
+.roll p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.dice1 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    bottom: 280px;
+    display: none;
+    transform: rotate(65deg);
+}
+
+.dice1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.dice2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    bottom: 220px;
+    display: none;
+    transform: rotate(20deg);
+}
+
+.dice2 img {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.71);
+    box-shadow: -1px -1px 15px 0 #f78803;
+}
+footer p {
+    padding: 15px;
+    color: #f78803;
+    font-size: 10px;
+}

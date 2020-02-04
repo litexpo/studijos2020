@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="hidegame()">
+<header>
+    <h3>Dicer</h3>
+    <img src="img/logo.png" alt="logo">
+</header>
+<section class="main">
+    <section class="registration" id="registration">
+    <div class="welcome">
+        <img src="img/rolling-dice.gif" alt="logo">
+    </div>
+        <div>
+        <input type="text" name="name1" class="input" placeholder="First player" id="name1">
+        <input type="text" name="name2" class="input" placeholder="Second player" id="name2">
+        </div>
+        <a href="#" id="start" onclick="start()">
+            <div class="start">
+                <img src="img/dice/drop-dices.png" alt="drop">
+                <p>START</p>
+            </div>
+        </a>
+    </section>
+    <section class="game" id="game">
+    <div id="player1" class="inactiveGamer">
+        <h1 class="playerName">Player 1</h1>
+        <p class="totalScore">Total score:</p>
+        <p class="score">0</p>
+    </div>
+    <div id="player2" class="activeGamer">
+        <h1 class="playerName">Player 2</h1>
+        <p class="totalScore">Total score:</p>
+        <p class="score">0</p>
+    </div>
+
+        <div class="dice1" id="dice1Container">
+            <img src="img/dice/dice-six-faces-five.png" alt="roll" id="dice1">
+        </div>
+
+        <div class="dice2" id="dice2Container">
+            <img src="img/dice/dice-six-faces-five.png" alt="roll" id="dice2">
+        </div>
+
+        <a href="#" id="rollButton" onclick="roll()">
+            <div class="roll">
+                <img src="img/dice/rolling-dices.png" alt="roll">
+                <p>SHAKE</p>
+            </div>
+        </a>
+        <a href="#" id="dropButton" onclick="drop()">
+
+        <div class="drop">
+            <img src="img/dice/drop-dices.png" alt="drop">
+            <p>DROP THE DICE!</p>
+        </div>
+        </a>
+    </section>
+    <section class="results" id="results">
+        <div class="resultLine" id="score1">
+        </div>
+        <div class="resultLine" id="score2">
+        </div>
+        <div class="resultLine" id="score3">
+        </div>
+        <div class="resultLine" id="score4">
+        </div>
+        <div class="resultLine" id="score5">
+        </div>
+        <div class="resultLine" id="score6">
+        </div>
+        <div class="resultLine" id="score7">
+        </div>
+        <div class="resultLine" id="score8">
+        </div>
+        <div class="resultLine" id="score9">
+        </div>
+        <div class="resultLine" id="score10">
+        </div>
+        <a href="#" id="newGame" onclick="newGame()">
+            <div class="newGame">
+                <img src="img/dice/drop-dices.png" alt="drop">
+                <p>NEW GAME</p>
+            </div>
+        </a>
+    </section>
+</section>
+<footer>
+    <p>Andrey Dranik JP17-2</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

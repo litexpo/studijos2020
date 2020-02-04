@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="lt">
+<!--Rita Lukosiunaite, ZP18=3, 2019-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atminties zaidimas</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="m-0 p-0 w-100 h-100">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+
+        <!--Pagrindine puslapio informacija.-->
+        <header>
+            <h1 class="m-3 p-3 h1 text-center font-weight-bold">Atminties žaidimas</h1>
+
+            <section class="score-panel mb-2 text-left w-55">
+                <span class="moves h4">0</span>
+                <span class="h4">ėjimas(-ai/-ų)</span>
+                <div class="restart h4 ml-6 float-right d-inline">Žaisk dar kartą!
+                    <i class="fa fa-repeat"></i>
+                </div>
+                <div class="timer h4 ml-3 mr-3 d-inline">00:00:00
+                </div>
+            </section>
+        </header>
+
+        <!--Issokancio lango informacija. -->
+        <div class="modal position-fixed">
+            <div class="modal-content rounded">
+                <h2 class="modal-title m-0 h2 text-center">🎉🎉🎉</h2>
+                <p class="modal-message h2 text-center">Laimėjai!</p>
+                <div class="modal-element text-center h2 d-inline">
+                    <span class="h2">Užtrukai :</span>
+                </div>
+                <div class="modal-element h2 text-center d-inline">
+                    <span class="h2">Ėjimų skaičius:</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-lg btn-block" onclick="again()">
+                        <a> Žaisk dar kartą! 😄</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

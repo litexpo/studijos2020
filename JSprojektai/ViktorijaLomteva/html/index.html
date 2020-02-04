@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../img/icon.png">
+    <title>creative &mdash; your professional website builder</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="main__menu">
+            <div class="main__menu-toggle">
+                <a href="#title">
+                    <div class="menu-toggle menu-toggle-title"><i class="fas fa-home"></i>Choose style for a title</div>
+                    <ul class="subnav subnav-title">
+                        <li class="menu-btn" id="btn-title-first">Style 1</li>
+                        <li class="menu-btn" id="btn-title-second">Style 2</li>
+                        <li class="menu-btn" id="btn-title-pic">Background</li>
+                    </ul>   
+                </a>            
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#nav">
+                    <div class="menu-toggle menu-toggle-nav"><i class="fas fa-bars"></i>Navigation</div>
+                    <ul class="subnav subnav-nav">
+                        <li class="menu-btn" id="btn-nav-first">Style 1</li>
+                        <li class="menu-btn" id="btn-nav-second">Style 2</li>
+                        <li class="menu-btn" id="btn-nav-third">Style 3</li>
+                    </ul>    
+                </a>           
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#about">
+                    <div class="menu-toggle menu-toggle-about"><i class="fas fa-chart-line"></i>About section</div>
+                    <ul class="subnav subnav-about">
+                        <li class="menu-btn" id="btn-about-first">Style 1</li>
+                        <li class="menu-btn" id="btn-about-second">Style 2</li>
+                        <li class="menu-btn" id="btn-about-third">Style 3</li>
+                    </ul>  
+                </a>             
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#gallery">
+                    <div class="menu-toggle menu-toggle-gallery"><i class="fas fa-camera"></i>Gallery section</div>
+                    <ul class="subnav subnav-gallery">
+                        <li class="menu-btn" id="btn-gallery-first">Style 1</li>
+                        <li class="menu-btn" id="btn-gallery-second">Style 2</li>
+                        <li class="menu-btn" id="btn-gallery-third">Style 3</li>
+                    </ul> 
+                </a>              
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#resume">
+                    <div class="menu-toggle menu-toggle-resume"><i class="far fa-copy"></i>Resume section</div>
+                    <ul class="subnav subnav-resume">
+                        <li class="menu-btn" id="btn-resume-first">Style 1</li>
+                        <li class="menu-btn" id="btn-resume-second">Style 2</li>
+                        <li class="menu-btn" id="btn-resume-third">Style 3</li>
+                    </ul>  
+                </a>             
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#contacts">
+                    <div class="menu-toggle menu-toggle-contacts"><i class="far fa-comments"></i>Contacts section</div>
+                    <ul class="subnav subnav-contacts">
+                        <li class="menu-btn" id="btn-contacts-first">Style 1</li>
+                        <li class="menu-btn" id="btn-contacts-second">Style 2</li>
+                        <li class="menu-btn" id="btn-contacts-third">Style 3</li>
+                    </ul>   
+                </a>            
+            </div>
+            <div class="main__menu-toggle">
+                <a href="#footer">
+                    <div class="menu-toggle menu-toggle-footer"><i class="far fa-map"></i>Footer section</div>
+                    <ul class="subnav subnav-footer">
+                        <li class="menu-btn" id="btn-footer-first">Style 1</li>
+                        <li class="menu-btn" id="btn-footer-second">Style 2</li>
+                        <li class="menu-btn" id="btn-footer-third">Style 3</li>
+                    </ul> 
+                </a>              
+            </div>
+            <div class="main__menu-toggle">
+                <div class="menu-toggle menu-toggle-colors"><i class="fas fa-fill-drip"></i>Choose main theme color</div>
+                <ul class="subnav subnav-colors">
+                    <li class="menu-btn theme-color-dark-blue"></li>
+                    <li class="menu-btn theme-color-red"></li>
+                    <li class="menu-btn theme-color-blue"></li>
+                    <li class="menu-btn theme-color-green"></li>
+                    <li class="menu-btn theme-color-pink"></li>
+                    <li class="menu-btn theme-color-pick"><input type="color" value="#c69963" id="color-picker"><p>Custom</p></li>
+                </ul>          
+            </div>
+            <div class="main__menu-toggle">
+                <div class="btn-card">
+                    <button class="btn-toCard">Add To Cart</button>
+                </div>
+            </div>
+        </aside>
+
+
+        <div class="main__website-preview">
+            <header class="main__bar">
+                <ul class="main__bar-items">
+                    <li class="bar-item">
+                        <a href="start.html">Back</a>
+                    </li>
+                    <li class="bar-item"><i class="fas fa-comments"></i></li>
+                    <li class="bar-item"><i class="fas fa-heart"></i>
+                        <div class="saved-templates"></div>
+                    <div class="dropdown">
+                        <div class="main__bar-dropdown">
+                            <a href="#" class="btn-preview">Preview</a>
+                            <a href="#" class="btn-buy">Buy now</a>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+            </header>
+            <section class="nav" id="nav">
+                <div class="nav-1 nav-element" id="nav-first">
+                    <div class="nav-logo color-change">Your Logo</div>
+                    <ul class="nav-1--navigation">
+                        <li><a class="darker-item" href="#">About</a></li>
+                        <li><a class="darker-item" href="#">Projects</a></li>
+                        <li><a class="darker-item" href="#">Services</a></li>
+                        <li><a class="darker-item" href="#">Careers</a></li>
+                        <li><a class="darker-item" href="#">Contact us</a></li>
+                        <li class="btn btn-nav color-hover"><a class="darker-item" href="#">Estimate project</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="nav-2 nav-element" id="nav-second">
+                    <ul class="nav-2--navigation">
+                        <li class="nav-logo color-change">Your Logo</li>
+                        <li><a class="darker-item" href="#">Platform</a></li>
+                        <li class="nav--dropdown"><a class="darker-item" href="#">Features<span>&darr;</span></a>
+                            <div class="dropdown-content color-change">
+                                <a class="darker-item" href="#">Feature 1</a>
+                                <a class="darker-item" href="#">Feature 2</a>
+                                <a class="darker-item" href="#">Feature 3</a>
+                            </div>
+                        </li>
+                        <li><a class="darker-item" href="#">About</a></li>
+                        <li><a class="darker-item" href="#">Hardware</a></li>
+                        <li><a class="darker-item" href="#">Contact us<span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-3 nav-element" id="nav-third">
+                    <ul class="nav-3--navigation" id="third-nav-menu">  
+                        <li><a class="darker-item" href="#">About</a></li>
+                        <li><a class="darker-item" href="#">Services</a></li>
+                        <li><a class="darker-item" href="#">Features</a></li>
+                        <li><a class="darker-item" href="#">Contact us</a></li>
+                    </ul>
+                        <div class="third-navi nav-element" id="third-nav-icon">
+                            <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                            <div class="btn-line"></div>
+                            <div class="third-nav-icon-title darker-item">Menu</div>
+                        </div>                   
+                </div>
+            </section>
+
+            <section class="main__title" id="title">
+                <div class="title-1 title-element color-change-main">
+                    <div class="main__title-1" id="title-first">
+                        <p class="main__title--text-small darker-item">Trusted web agency</p>
+                        <h2 class="darker-item">Transform Your Ideas into a Great Product</h2>
+                        <p class="main__title--text-big darker-item">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia ex iusto corrupti sint excepturi tempora officia porro dolores fugit aliquam est sapiente.
+                        </p>
+                        <div class="main__title--btn">
+                            <button class="btn btn-title">Search now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title-2 title-element color-change-main">
+                    <div class="main__title-2" id="title-second">
+                        <p class="main__title--text-small darker-item">Trusted web agency</p>
+                        <h2 class="darker-item">Transform Your Ideas into a Great Product</h2>
+                        <p class="main__title--text-big darker-item">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia ex iusto corrupti sint excepturi tempora officia porro dolores fugit aliquam est sapiente.
+                        </p>
+                        <div class="main__title--btn">
+                            <button class="btn btn-title">Search now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__about" id="about">
+                <div class="main__about--columns-first about-element" id="about-columns-1">       
+                    <p class="main__about--text">Inovative and Powerful Platform</p>
+                    <div class="main__about--columns">
+                        <div class="main__about--column">
+                            <i class="about--icon--1 far fa-folder-open"></i>
+                            <p class="about--title--1">Motivate</p>
+                            <p class="about--text--1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <i class="about--icon--1 far fa-grin-beam"></i>
+                            <p class="about--title--1">Inovate</p>
+                            <p class="about--text--1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <i class="about--icon--1 far fa-envelope-open"></i>
+                            <p class="about--title--1">Join now</p>
+                            <p class="about--text--1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <i class="about--icon--1 fas fa-globe-americas"></i>
+                            <p class="about--title--1">New platforms</p>
+                            <p class="about--text--1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__about--columns-second about-element" id="about-columns-2">
+                    <div class="main__about--columns">
+                        <div class="main__about--column main__about--second-columns">
+                            <i class="about--icon fas fa-code"></i>
+                            <p class="about--title--2">Join now</p>
+                            <p class="about--text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere. Quis reiciendis excepturi fuga odio aliquid ab similique.</p>
+                        </div>
+                        <div class="main__about--column main__about--second-columns">
+                            <i class="about--icon fas fa-comment-dots"></i>
+                            <p class="about--title--2">Earn Credits</p>
+                            <p class="about--text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere. Quis reiciendis excepturi fuga odio.</p>
+                        </div>
+                        <div class="main__about--column main__about--second-columns">
+                            <i class="about--icon fas fa-dolly"></i>
+                            <p class="about--title--2">Inovate</p>
+                            <p class="about--text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere. Quis reiciendis excepturi fuga.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__about--columns-third about-element" id="about-columns-3">
+                    <p class="main__about--text">Inovative and Powerful Platform</p>
+                    <div class="main__about--columns">
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 fas fa-briefcase"></i>
+                                <p class="about--title--3">Digital</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 fas fa-desktop"></i>
+                                <p class="about--title--3">Web development</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere. Quis reiciendis excepturi.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 fas fa-folder-open"></i>
+                                <p class="about--title--3">Design</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere. Quis reiciendi.</p>
+                        </div>
+                    </div>
+                    <div class="main__about--columns">
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 far fa-calendar-check"></i>
+                                <p class="about--title--3">Digital</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere amet consectetur.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 fas fa-chart-line"></i>
+                                <p class="about--title--3">Development</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere quis.</p>
+                        </div>
+                        <div class="main__about--column">
+                            <div class="about--icon-title">
+                                <i class="about--icon--3 fas fa-check"></i>
+                                <p class="about--title--3">Design</p>
+                            </div>
+                            <p class="about--text--3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit facere.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__gallery" id="gallery">
+                <div class="main__gallery--1 gallery-element">
+                    <div class="gallery--first">
+                        <div class="gall-img-1"></div>
+                        <div class="gall-img-2"></div>
+                        <div class="gall-img-3"></div>
+                        <div class="gall-img-4"></div>
+                        <div class="gall-img-5"></div>
+                        <div class="gall-img-6"></div>
+                        <div class="gall-img-7"></div>
+                        <div class="gall-img-8"></div>
+                    </div>
+                </div>
+                <div class="main__gallery--2 gallery-element">
+                    <div class="gallery--second">
+                        <div class="gall-img-1"></div>
+                        <div class="gall-img-2"></div>
+                        <div class="gall-img-3"></div>
+                        <div class="gall-img-4"></div>
+                        <div class="gall-img-5"></div>
+                        <div class="gall-img-6"></div>
+                        <div class="gall-img-7"></div>
+                        <div class="gall-img-8"></div>
+                    </div>
+                </div>
+                <div class="main__gallery--3 gallery-element">
+                    <div class="gallery--third">
+                        <div class="gall-img-1"></div>
+                        <div class="gall-img-2"></div>
+                        <div class="gall-img-3"></div>
+                        <div class="gall-img-4"></div>
+                        <div class="gall-img-5"></div>
+                        <div class="gall-img-6"></div>
+                        <div class="gall-img-7"></div>
+                        <div class="gall-img-8"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__resume color-change" id="resume">
+                <div class="main__resume--first resume-element">
+                    <div class="main__resume--first-inside">
+                        <div class="resume--first-theme-1">
+                            <h3>Resume</h3>
+                            <p class="resume--box-1">
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime nemo itaque exercitationem consectetur. Illum est eaque, cum assumenda, delectus maxime explicabo tempora officia molestiae non optio ullam! Consectetur, impedit.</q>
+                            </p>
+                            <p>&mdash; Name Lastname</p>
+                        </div>
+                        <div class="resume--first-theme-2">
+                            <h3>My promise</h3>
+                            <p class="resume--box-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime nemo itaque exercitationem consectetur. Illum est eaque, cum assumenda, delectus maxime explicabo tempora officia molestiae non optio ullam! Consectetur, impedit.
+                            </p>
+                            <button class="btn btn-resume">See my works</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main__resume--second resume-element">
+                    <div class="resume--second-block">
+                        <div class="resume--second-theme-1">
+                            <img src="../img/img-8.jpeg" alt="">
+                        </div>
+                        <div class="resume--second-theme-2">
+                            <p class="resume--second-heading">Point of sale</p>
+                            <h3>Standout retail experieces</h3>
+                            <div class="resume--second-theme-2-text">Elevate your sellings
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium, rerum officiis laborum odio harum nisi assumenda quia quo veritatis officia molestiae amet vel at iusto porro alias. Eligendi, in.</p>
+                                <p>Better shopping experiences</p>
+                                <p>Easy-to-use hardware and software</p>
+                                <p>Unifield back office</p>
+                            </div>
+                            <button class="btn-second-resume">Learn more about Point of sale<span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__resume--third resume-element">
+                    <div class="resume--third-block">
+                        <div class="resume--third-theme-2">
+                            <p class="resume--third-heading">Point of sale</p>
+                            <h3>Standout retail experieces</h3>
+                            <p class="resume--third-text--big">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit voluptatum est veniam illum, eius.</p>
+                            <div class="resume--third-theme-3-text">Elevate your sellings</div>
+                                <p class="resume--third-text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in.</p>
+                            <div class="resume--third-theme-3-text">Better shopping experiences</div>
+                                <p class="resume--third-text--small">Lorem ipsum dolor sit amet mollitia, aut consectetur? Commodi, harum esse amet.</p>
+                            <div class="resume--third-theme-3-text">Easy-to-use hardware and software</div>
+                                <p class="resume--third-text--small">Lorem ipsum dolor sit amet consectetur, quae obcaecati aliquam aspernatur quisquam, possimus!</p>
+                            <div class="resume--third-theme-3-text">Unifield back offic</div>
+                                <p class="resume--third-text--small">Lorem ipsum dolor sit amet consectetur dolorem minima beatae totam animi.</p>
+                            
+                            <button class="btn-second-resume">Learn more about Point of sale<span>&rarr;</span></button>
+                        </div>
+                        <div class="resume--third-theme-1">
+                            <img src="../img/img-8.jpeg" alt="">
+                            <img src="../img/img-5.jpeg" alt="" class="resume--third-second-pic">
+                        </div>
+                    </div>
+                </div>          
+            </section>
+
+            <section class="main__contacts" id="contacts">
+                <div class="contacts--first contact-element">
+                    <h2>Start providing great product!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias illum consectetur?</p>
+                    <button class="btn btn-contact-1 color-change color-hover">Contact us</button>
+                </div>
+
+                <div class="contacts--second contact-element">
+                    <h2>We provide high quality development services</h2>
+                    <div class="contacts--second-box">       
+                        <div class="contacts--second-details">                                      
+                            <div class="contacts--second-detail">
+                                <i class="contacts--icon fas fa-briefcase"></i>   
+                                <div class="contacts--second-option"><span>450</span> Happy clients</div>
+                            </div>
+                            <div class="contacts--second-detail">    
+                                <i class="contacts--icon fas fa-desktop"></i>        
+                                <div class="contacts--second-option"><span>700</span> Photo capture</div>
+                            </div>
+                            <div class="contacts--second-detail">       
+                                <i class="contacts--icon fas fa-folder-open"></i>       
+                                <div class="contacts--second-option"><span>880</span> Work completed</div>
+                            </div>
+                            <div class="contacts--second-detail">          
+                                <i class="contacts--icon fas fa-globe-americas"></i>     
+                                <div class="contacts--second-option"><span>550</span> Telephoning talk</div>
+                            </div>
+                            <div class="contacts--second-detail">
+                                <i class="contacts--icon fas fa-briefcase"></i>   
+                                <div class="contacts--second-option"><span>450</span> Happy clients</div>
+                            </div>
+                            <div class="contacts--second-detail">    
+                                <i class="contacts--icon fas fa-desktop"></i>        
+                                <div class="contacts--second-option"><span>700</span> Photo capture</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts--contact-us">
+                        <button class="btn btn-contact-2 color-change color-hover">Contact us</button>
+                    </div>              
+                </div>
+
+                <div class="contacts--third contact-element">
+                    <div class="contacts--third-box">
+                        <div class="contacts---third-box-1">
+                            <h2>We would love to hear from you</h2>
+                        </div>
+                        <div class="contacts---third-box-2">
+                            <p>Contacts</p>
+                            <p>+41 599 857 021</p>
+                            <p>Or</p>
+                            <button class="btn btn-contact-3 color-change color-hover">Send a message</button>                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__footer" id="footer">
+                <div class="footer--first footer-element">
+                    <div class="footer--first-boxes">
+                        <div class="footer--first-box-1">
+                            <div class="footer-logo color-change">Your Logo</div>
+                        </div>
+                        <div class="footer--first-box-2">
+                            <p>&copy; JS project, Viktorija Lomteva</p>
+                            <div class="footer--first-icons">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer--second footer-element">
+                    <div class="footer--second-boxes">
+                        <div class="footer--second-box-1">
+                            <div class="footer-logo color-change">Your Logo</div>
+                        </div>
+                        <div class="footer--second-box-2">
+                            <p class="footer--second-title">Navigation</p>
+                            <ul>
+                                <li><a href="#"></a>Articles</li>
+                                <li><a href="#"></a>Blog</li>
+                                <li><a href="#"></a>News</li>
+                                <li><a href="#"></a>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="footer--second-box-3">
+                            <p class="footer--second-title">Social links</p>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <p>&copy; JS project, Viktorija Lomteva</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer--third footer-element">    
+                    <div class="footer--third-boxes">
+                        <div class="footer-logo color-change">Your Logo</div>
+                        <div class="footer--third-box-1">
+                            <p class="footer--third-text">Menu</p>
+                            <div class="footer--third-text-sub">
+                                <p>Services</p>
+                                <p>Projects</p>
+                                <p>About</p>
+                                <p>Blog</p>
+                                <p>Careers</p>
+                                <p>Contact</p>
+                            </div>
+                        </div>
+                        <div class="footer--third-box-2">
+                            <p class="footer--third-text">Services</p>
+                            <div class="footer--third-text-sub">
+                                <p>Web Development</p>
+                                <p>MVP Development</p>
+                                <p>UX & Design</p>
+                                <p>Ruby On Rails</p>
+                            </div>
+                        </div>
+                        <div class="footer--third-box-3">
+                            <p class="footer--third-text">Nopio</p>
+                            <div class="footer--third-text-sub">
+                                <p>Name ofstreet </p>
+                                <p>31-599, Lisbon, Portugal</p>
+                                <p>NIP: 98955201</p>
+                            </div>
+                        </div>
+                        <div class="footer--third-box-4">
+                            <p class="footer--third-text">Recognition</p>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="footer--third-box-2"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="pop-up">
+        <span id="closeBtn">&times;</span>
+        <div class="pop-up-box">
+            <img src="../img/img-1-small.jpeg" class="bg-img-1" alt="Bg image">
+            <img src="../img/img-2-small.jpeg" class="bg-img-2" alt="Bg image">
+            <img src="../img/img-3-small.jpeg" class="bg-img-3" alt="Bg image">
+            <img src="../img/img-4-small.jpeg" class="bg-img-4" alt="Bg image">
+            <img src="../img/img-5-small.jpeg" class="bg-img-5" alt="Bg image">
+            <img src="../img/img-6-small.jpeg" class="bg-img-6" alt="Bg image">
+            <img src="../img/img-7-small.jpeg" class="bg-img-7" alt="Bg image">
+            <img src="../img/img-8-small.jpeg" class="bg-img-8" alt="Bg image">
+            <img src="../img/img-9-small.jpeg" class="bg-img-9" alt="Bg image">
+        </div>
+    </section>
+
+
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/jquery.js"></script>
+</body>
+</html>

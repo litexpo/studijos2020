@@ -1,0 +1,36 @@
+body{
+    font-family: 'Muli', sans-serif;
+}
+#about a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#portfolio a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#portfolio a:hover {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#ikonos a i {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#ikonos a:hover{
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.btn-outline-dark:hover {
+    background-color: #1abc9c;
+}
