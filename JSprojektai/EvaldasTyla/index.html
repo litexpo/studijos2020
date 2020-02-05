@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Pika Pika</title>
+  <meta name="description" content="Evaldo projektas" />
+  <meta content="text/html; charset=UTF-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/light.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="main">
+
+    <header>
+      <div id="logo"><h1>Tr*ksta kavos</h1></div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Pradžia</a></li>
+          <li id="game"><a href="game.html" onclick='clickAlert()'>Pradėk žaidimą!</a></li>
+          <script>clickAlert = function() {
+                    alert("Valdymas - klaviatūros rodyklėmis \n \n Šuolis - spacebar \n \n Tikslas - keksai! \n \n SKANAUS!");
+                  }
+          </script>
+        </ul>
+      </nav>
+    </header>
+      
+    <div id="site_content">
+      <ul class="slideshow">
+        <li class="show"><img width="950" height="450" src="images/pokebg.jpg"/></li>
+      </ul>
+    </div>
+      <footer>
+      <p>Evaldas Tyla JP/3</p>
+    </footer>
+  </div>
+</body>
+</html>

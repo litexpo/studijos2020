@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="anime-demo">
+
+    <!--  Galima keisti kelią, su programa Inkscape nusipiešti naują -->
+    <svg
+       xmlns:dc="http://purl.org/dc/elements/1.1/"
+       xmlns:cc="http://creativecommons.org/ns#"
+       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:svg="http://www.w3.org/2000/svg"
+       xmlns="http://www.w3.org/2000/svg"
+       id="svg8"
+       version="1.1"
+       viewBox="0 0 529.35208 264.58334"
+       height="1000"
+       width="2000.7008">
+      <defs
+         id="defs2" />
+      <metadata
+         id="metadata5">
+        <rdf:RDF>
+          <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type
+               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title></dc:title>
+          </cc:Work>
+        </rdf:RDF>
+      </metadata>
+      <g
+         transform="translate(0,-32.41664)"
+         id="layer1">
+        <path
+           id="path815"
+           d="m -100.54167,177.55949 c 2.267861,-4.53571 42.333337,-74.83929 66.523812,-46.11309 24.1904776,28.72619 86.934526,64.25595 117.172616,37.79761 30.238102,-26.45833 52.160712,-114.148795 90.714292,-65.0119 38.55357,49.1369 13.60714,111.88095 65.0119,70.30357 51.40476,-41.57738 20.4107,-119.440465 79.375,-70.30357 58.96428,49.1369 48.38094,92.22619 96.00594,58.20833 47.625,-34.01785 38.55358,-93.738085 73.32739,-48.38095 34.77382,45.35714 32.50595,83.15476 61.23215,70.30357 28.72619,-12.85119 42.33334,-26.45833 42.33334,-26.45833"
+           style="fill:none;stroke:#000000;stroke-width:0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+    </svg>
+
+    <!-- Galima pakeisti paveiksliukus -->
+    <div class="square blue"><img src="moon.png"></div>
+    <div class="square red"><img src="moon.png"></div>
+    <div class="square orange"><img src="ladybug.png"></div>
+    <div class="square green"><img src="ladybug.png"></div>
+
+    <div class=controls>
+      <button class="button play">Start</button>
+      <button class="button pause">Stop</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+    <script>
+      var path = anime.path('path');
+
+      // Galima keisti judėjimą easings, visi galimi  yra https://animejs.com/documentation/#pennerFunctions
+      var easings = ['linear', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc'];
+
+      var motionPath = anime({
+        targets: '.square',
+        translateX: path('x'),
+        translateY: path('y'),
+        rotate: path('angle'), //objekto kampas prisitaiko pagal kreivę
+        // rotate: 1000, //kiek laipsnių apsisuka aplink savo ašį
+        easing: function(el, i) {
+          return easings[i];
+        },
+
+        //Galima keisti judėjimo greitį
+        duration: 10000,
+        loop: true
+      });
+      document.querySelector('.play').onclick = motionPath.play;
+      document.querySelector('.pause').onclick = motionPath.pause;
+    </script>
+</body>
+
+</html>

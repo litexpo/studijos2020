@@ -1,0 +1,21 @@
+body { 
+  background: #EEE;
+  color: #444;}
+
+text {
+  background: #F1F1E7;
+  text-shadow: 1px 1px #FFF;
+  color: #555;}
+
+ul#nav li a {
+  text-shadow: 1px 1px #FFF;
+  color: #000;}
+
+a, a:hover, footer a, ul#nav li.selected a, ul#nav li a:hover, ul#nav ul li a:hover, ul#nav ul li a:focus, 
+ul#nav li.selected ul a:hover, div.controls.portfolio_one a, div.controls.portfolio_two a:hover { 
+  color: #F6007F;}
+
+h1, h3, h4, h5, a:hover, #logo h1, #logo h1 a:hover, 
+.form_settings input, .form_settings textarea,
+#blog_container h4, .blog h2, ul#nav li.selected ul a { 
+  color: #555;}
